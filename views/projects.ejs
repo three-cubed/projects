@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Projects</title> 
+</head>
+
+<body id='body'>
+    <div id='mainDiv'>  
+        <div class='topBuffer'></div>    
+        <span id='heading1'>
+            Hullo! <%= nameComment %>
+            <br>
+            <small>I am a self-trained programmer.</small>
+        </span>  
+        <br>
+        <span id='heading2'>
+            Have a look at some of my projects!
+        </span>
+        <br>
+        <span id='heading3'>
+            <span id='clickAdvice'></span>           
+            <small><small><%= contactComment %></small></small>
+        </span>    
+        <br><br>
+        <div id='projects'>
+            <div class='buffer'></div>
+            <div class='project'>
+                <h2>Maths Farm 4<br><small>(front-end)</small></h2>
+                <img src="/Screenshot-MathsFarm-MathsPlay.png" width="83.5%">
+                <br>
+                <img src="/Screenshot-MathsFarm-Animals.png" width="83.5%">
+                <p>
+                  While existing programmes such as Zetamac are a very effective way to improve mental arithmetic, they are unappealing to most pupils.
+                  I therefore designed Maths Farm as a gamified mental arithmetic programme that could appeal to pupils.
+                </p>
+                <p>
+                  Maths Farm is a useful and engaging tool in the classroom, and it is also used by pupils at home.
+                </p>
+                <ul class='list'>
+                    <li>Player options allow a choice of arithmetic operations.</li>
+                    <li>Player options allow a wide choice of customised difficulty levels.</li>
+                    <li>Gamification involves buying and selling animals with money earned through arithmetic.</li>
+                    <li>Three themes to provide variety: Classic, Australian and Undersea.</li>
+                    <li>A mobile-friendly version, which can also be a useful simplified version for new users or younger pupils.</li>
+                    <li>On devices that allow drag-&-drop, the player can move animals around their farm (for a pound a go.)</li>
+                    <li>Players have a discount sell-back option by dragging an animal to the top of the screen.</li>
+                    <li>Simple animation allows the animals to roam the farm at will, bringing Maths Farm gameplay up to the expectations of the more ethically discerning player.</li>
+                </ul>
+                <h3>
+                    <a href="https://mathematical.neocities.org/x-demo-MF4arithmetic.html">
+                        An arithmetic demo
+                    </a>
+                    <br><small>(reduced time, mobile version)</small>
+                </h3>
+                <h3>
+                    <a href="https://mathematical.neocities.org/x-demo-MF4animals.html">
+                        A farm management demo
+                    </a>
+                    <br><small>(Spend unearnt money!)</small>
+                </h3>
+                <h3>
+                    <a href="https://github.com/three-cubed/maths_farm">
+                        View the code.
+                    </a>
+                </h3>
+                <h3>
+                    <a href="https://mathematical.neocities.org/MathsFarm4.html">
+                        Play the full game now!
+                    </a>
+                </h3>
+            </div>
+            <div class='buffer'></div>
+            <div class='project'>
+                <h2>Mathsmarker<br><small>(full-stack)</small></h2>
+                <img src="/Screenshot-Mathsmarker.png" width="93%">
+                <p>
+                    Mathsmarker allows pupils to check their answers without actually giving them the answers. 
+                    This allows them to gain immediate feedback and proceed with some autonomy, rather than waiting for the teacher.
+                    Mathsmarker may be used in the classroom or from home.
+                </p>
+                <p>
+                    The application works with data it obtains from a Mongo database.
+                    The data may be entered directly into the MongoDB, 
+                    or entered more conveniently using my teacher interface application (see right!)
+                </p>
+                <ul class='list'>
+                    <li>Javascript DOM manipulation based on the contents of the database.</li>
+                    <li>A simple and intuitive interface, easily understood by children, allows pupils to type in and check their answers.</li>
+                    <li>The interface is logically organised by class/group, topic and exercise.</li>
+                    <li>Use of Fetch API requests to the server.</li>
+                    <li>A brief delay is imposed on a given exercise after checking answers, to discourage a trial-and-error approach.</li>
+                </ul>
+                <h3>
+                    <a href="https://mathematical.neocities.org/x-accessible-mathsmarker.html">
+                        View the publicly accessible deployment.
+                    </a>
+                </h3>
+            </div>
+            <div class='buffer'></div>
+            <div class='project'>
+                <h2>Teacherside<br><small>(full-stack)</small></h2>
+                <img src="/Screenshot-Mathsmarker-Teacherside.png" width="96%">
+                <p>
+                Mathsmarker Teacherside is an application designed to enter data into a Mongo database for use by the original Mathsmarker project (see left!).
+                Teachers enter the desired question/answer information into the application, which communicates it to the database. 
+                The database stores the information entered on the teacherside and makes it immediately available to the original Mathsmarker 'pupilside' project.
+                </p>
+                <ul class='list'>
+                    <li>Password authentication with bcrypt encryption using a passport-local strategy, to ensure users are legitimate editors.</li>
+                    <li>Password set-up requires minimum password length and rejects many predictable passwords.</li>
+                    <li>A methodical interface organised by class/group, topic and exercise.</li>
+                    <li>Ability to create, view, edit, and delete classes/groups, topics, and exercises.</li>
+                    <li>For each individual question, teachers can...
+                        <ul>
+                            <li>require a particular answer, or instead allow any of a set of answers, for example allowing 400 mm, 40 cm, or 0.4m,</li>
+                            <li>customise responses to incorrect answers, for example offering a hint.</li>
+                        </ul>
+                    </li>
+                    <li>Useful editing options for exercises, including...
+                        <ul>
+                            <li>sharing exercises by saving new copies in other groups,</li>
+                            <li>re-ordering exercises within a topic using drag and drop,</li>
+                            <li>choice of adding a note to pupils at the beginning of the exercise.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>
+                    <a href="https://mathematical.neocities.org/x-accessible-mathsmarker.html">
+                        View the publicly accessible deployment.
+                    </a>
+                </h3>
+                <h3>
+                    <a href="https://github.com/three-cubed/mathsmarker-teacherside-public">
+                        View front-end code.
+                    </a>
+                </h3>
+            </div>
+            <div class='buffer'></div>
+            <div class='project'>
+                <h2>Exercise Log<br><small>(full-stack)</small></h2>
+                <img src="/Screenshot-exerList.png" width="80%">
+                <br>
+                <img src="/Screenshot-addExer.png" width="80%">
+                <p>
+                  The Exercise Log is a simple "MERN stack" application, 
+                  i.e. a full-stack application using <b>M</b>ongoDB + <b>E</b>xpress + <b>R</b>eact + <b>N</b>odeJS. 
+                </p>
+                <p>
+                  The basic concept of the application is to allow a user to record the exercise they have done.
+                  Users can create records of their exercise as 'exercise events' which are saved on the database. 
+                  The application displays existing records from the database. 
+                  The user can also delete any existing records. 
+                </p>
+                <ul class='list'>
+                    <li>Smooth re-rendering when the user makes changes.</li>
+                    <li>The user has a choice of colour for each exercise to add personalisation.</li>
+                    <li>Efficient DOM manipulation via the React virtual DOM.</li>
+                    <li>Use of Fetch API requests to the server.</li>
+                    <li>Test files using jest.</li>
+                </ul>
+                <h3>
+                    <a href="https://github.com/three-cubed/exercise_log_React">
+                        View the code.
+                    </a>
+                </h3>
+                <h3>
+                    <span class='lightPurple'>View </span>
+                    <a href="https://github.com/three-cubed/exercise_log_React/tree/main/client/src/components/__tests__">
+                        component tests
+                    </a>
+                    <br><span class='lightPurple'>or </span>
+                    <a href="https://github.com/three-cubed/exercise_log_React/blob/main/client/src/App.test.js">
+                        App.js tests.
+                    </a>
+                </h3>
+            </div>
+            <div class='buffer'></div>
+        </div>      
+    </div>
+      
+<script>
+      
+    const clickAdvice = document.getElementById('clickAdvice');
+    const projects = document.getElementById('projects');          
+    const projectClass = document.querySelectorAll('.project');
+    document.getElementById('body');
+    detectMobileOrNarrow();
+      
+    function detectMobileOrNarrow() {              
+        if (window.innerWidth <= 700) {
+            projects.classList.add('column');
+            document.getElementById('heading1').style.fontSize = "38px";
+            document.getElementById('heading2').style.fontSize = "32px";
+            document.getElementById('heading3').style.fontSize = "26px";
+        } else {
+            clickAdvice.innerHTML = '<small><small>Click on any project to enlarge the blurb.</small></small><br>';
+            addEventListeners();
+        }
+    }
+          
+    function addEventListeners() {
+        projectClass.forEach((project) => {
+            project.addEventListener('click', toggleProject);  
+        })
+    }
+        
+    function toggleProject() {
+        this.classList.toggle('projectEnlarged');    
+        projectClass.forEach((project) => {
+            if (project !== this) {
+                project.classList.remove('projectEnlarged');
+            }
+        })
+    }
+                              
+</script>
+      
+<style>
+
+    body {
+        width: auto;
+        text-align: center; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background-color: papayawhip;
+    }
+    #projects {
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+    }
+    #heading1 {
+        font-size: 52px;
+        font-weight: bolder;
+    }
+    #heading2 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    #heading3 {
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    a {
+        color: #9575cd;
+    }
+    .lightPurple {
+        color: #9575cd;
+    }
+    .column {
+        flex-direction: column;
+    }          
+    .project {
+        align-self: flex-start;
+        flex-basis: 100%;
+        padding: 2vh; 
+        border: solid #0030bb 4px;
+        min-height: 10vh;
+        background-color: white;
+    }
+    .projectEnlarged {
+        color: #0030bb;
+        font-size: 22px;
+        flex-basis: 200%;
+    }
+    .list {
+        text-align: left; 
+        position: relative;
+        left: -1vw;
+    }
+    .buffer {
+        padding: 0.5vw;
+    }
+    .topBuffer {
+        min-height: 2.2vw;
+    }
+          
+</style>
+      
+</body>
+
+</html>
