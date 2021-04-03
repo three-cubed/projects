@@ -13,7 +13,7 @@
         <span id='heading1'>
             Hullo! <%= nameComment %>
             <br>
-            <small>I am a self-trained programmer.</small>
+            <small>I am a self-taught programmer.</small>
         </span>  
         <br>
         <span id='heading2'>
@@ -30,7 +30,7 @@
             <div class='project'>
                 <h2>Maths Farm 4<br><small>(front-end)</small></h2>
                 <img src="/Screenshot-MathsFarm-MathsPlay.png" width="83.5%">
-                <br>
+                <br><br>
                 <img src="/Screenshot-MathsFarm-Animals.png" width="83.5%">
                 <p>
                   While existing programmes such as Zetamac are a very effective way to improve mental arithmetic, they are unappealing to most pupils.
@@ -142,36 +142,38 @@
             <div class='project'>
                 <h2>Exercise Log<br><small>(full-stack)</small></h2>
                 <img src="/Screenshot-exerList.png" width="80%">
-                <br>
+                <br><br>
                 <img src="/Screenshot-addExer.png" width="80%">
                 <p>
-                  The Exercise Log is a simple "MERN stack" application, 
-                  i.e. a full-stack application using <b>M</b>ongoDB + <b>E</b>xpress + <b>R</b>eact + <b>N</b>odeJS. 
-                </p>
+                  The Exercise Log is a relatively simple full-stack React application interacting with a database.
+                  There are two versions using different database types: One uses MongoDB (the 'MERN-stack' version), and the other uses MySQL (the 'SERN-stack' version).
                 <p>
                   The basic concept of the application is to allow a user to record the exercise they have done.
-                  Users can create records of their exercise as 'exercise events' which are saved on the database. 
+                  Users can create records of their exercise (in their chosen colour) as 'exercise events' which are saved on the database. 
                   The application displays existing records from the database. 
                   The user can also delete any existing records. 
                 </p>
                 <ul class='list'>
-                    <li>Smooth re-rendering when the user makes changes.</li>
-                    <li>The user has a choice of colour for each exercise to add personalisation.</li>
-                    <li>Efficient DOM manipulation via the React virtual DOM.</li>
+                    <li>React gives efficient DOM manipulation and smooth re-rendering when the user makes changes.</li>
                     <li>Use of Fetch API requests to the server.</li>
                     <li>Test files using jest.</li>
                 </ul>
                 <h3>
                     <a href="https://github.com/three-cubed/exercise_log_React">
-                        View the code.
+                        MongoDB version: View the code.
                     </a>
                 </h3>
                 <h3>
-                    <span class='lightPurple'>View </span>
+                    <a href="https://github.com/three-cubed/exercise_log_React_mysql">
+                        MySQL version: View the code.
+                    </a>
+                </h3>
+                <h3>
+                    <span class='lilac'>View </span>
                     <a href="https://github.com/three-cubed/exercise_log_React/tree/main/client/src/components/__tests__">
                         component tests
                     </a>
-                    <br><span class='lightPurple'>or </span>
+                    <span class='lilac'>or </span>
                     <a href="https://github.com/three-cubed/exercise_log_React/blob/main/client/src/App.test.js">
                         App.js tests.
                     </a>
@@ -190,7 +192,7 @@
     detectMobileOrNarrow();
       
     function detectMobileOrNarrow() {              
-        if (window.innerWidth <= 700) {
+        if (window.innerWidth <= 1000) {
             projects.classList.add('column');
             document.getElementById('heading1').style.fontSize = "38px";
             document.getElementById('heading2').style.fontSize = "32px";
@@ -248,7 +250,7 @@
     a {
         color: #9575cd;
     }
-    .lightPurple {
+    .lilac {
         color: #9575cd;
     }
     .column {

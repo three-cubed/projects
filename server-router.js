@@ -11,8 +11,6 @@ app.set('view engine', 'ejs');
 app.use(favicon('./favicon.png'));
 app.use(express.static('pics'));
 
-// const info = require('./info.js');
-
 app.get('/', (req, res) => {
         res.render('projects', {
                 nameComment: process.env.nameComment,
