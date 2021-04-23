@@ -25,7 +25,7 @@
             <small><small><%= contactComment %></small></small>
         </span>    
         <br><br>
-        <div id='projects'>
+        <div id='projects' class='projects'>
             <div class='buffer'></div>
             <div class='project'>
                 <h2>Maths Farm 4<br><small>(front-end)</small></h2>
@@ -180,7 +180,31 @@
                 </h3>
             </div>
             <div class='buffer'></div>
-        </div>      
+        </div>   
+        <div class='buffer'></div>
+        <div class='projects'>
+            <div id='thickBufferLeft'></div>
+            <div class='project'>
+                <h2>Smaller projects</h2>
+                <img src="/Screenshot-graph.png" width="36%">
+                <img src="/Screenshot-stopwatch3.png" width="34%">
+                <ul class='list'>
+                    <li>My recent temperature application consumes recent data from the Open Weather Map API. It then analyses the hourly data to obtain 24-hour maximum and minimum temperatures and plots these as two lines on a graph using ChartJS.</li>
+                    <li>My stopwatch programme uses React as a framework for showing times elapsed. It also features lap times with the option of deleting the existing lap times without stopping the stopwatch. It uses local storage to preserve the lap times even if the page is reloaded.</li>
+                </ul>
+                <h3>
+                    <a href="https://github.com/three-cubed/obtain_temperature_and_graph_it">
+                        View the code for the recent temperatures application.
+                    </a>
+                </h3>
+                <h3>
+                    <a href="https://github.com/three-cubed/stopwatch_react">
+                        View the code for the React stopwatch.
+                    </a>
+                </h3>
+            </div>
+            <div id='thickBufferRight'></div>
+        </div>
     </div>
       
 <script>
@@ -197,6 +221,8 @@
             document.getElementById('heading1').style.fontSize = "38px";
             document.getElementById('heading2').style.fontSize = "32px";
             document.getElementById('heading3').style.fontSize = "26px";
+            document.getElementById('thickBufferLeft').style.padding = "0.2vw";
+            document.getElementById('thickBufferRight').style.padding = "0.2vw";
         } else {
             clickAdvice.innerHTML = '<small><small>Click on any project to enlarge the blurb.</small></small><br>';
             addEventListeners();
@@ -230,7 +256,7 @@
         justify-content: center; 
         background-color: papayawhip;
     }
-    #projects {
+    .projects {
         display: flex; 
         align-items: center; 
         justify-content: center; 
@@ -276,6 +302,9 @@
     }
     .buffer {
         padding: 0.5vw;
+    }
+    #thickBufferLeft, #thickBufferRight {
+        padding: 6vw;
     }
     .topBuffer {
         min-height: 2.2vw;
